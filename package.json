@@ -5,7 +5,11 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
+    "html-pdf": "^3.0.1",
     "serverless-express": "^2.0.11"
+  },
+  "scripts": {
+    "deploy": "export AZURE_CLIENT_SECRET='LtY1K2HueDhQRPwkvN.663g4k.mtB-ns.-' && export AZURE_CLIENT_ID='96bf1647-79c1-42d2-ab22-e8b27278f563' && export AZURE_TENANT_ID='b698720d-21fd-4c3e-8bad-66b0825a7b5a' && export AZURE_SUBSCRIPTION_ID='57ec4ddc-f1ec-4c3e-a4c5-1affa8276c58' && serverless deploy"
   },
   "devDependencies": {
     "serverless-azure-functions": "^2.1.0"

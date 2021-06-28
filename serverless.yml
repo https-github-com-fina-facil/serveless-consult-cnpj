@@ -19,3 +19,19 @@ functions:
           authLevel : anonymous
           methods:
             - post
+  download-files:
+     handler: handler.handler
+     events:
+      - http: true
+        x-azure-settings:
+          authLevel : anonymous
+          methods:
+            - post        
+  api-servless-fina:
+     handler: handler.handler
+     events:
+      - http: true
+        x-azure-settings:
+          authLevel : anonymous
+          methods:
+            - get           
